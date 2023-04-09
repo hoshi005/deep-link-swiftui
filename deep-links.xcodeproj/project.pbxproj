@@ -11,6 +11,12 @@
 		EFD07E9029E0DC4C00755EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD07E8F29E0DC4C00755EBD /* ContentView.swift */; };
 		EFD07E9229E0DC4D00755EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD07E9129E0DC4D00755EBD /* Assets.xcassets */; };
 		EFD07E9529E0DC4D00755EBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFD07E9429E0DC4D00755EBD /* Preview Assets.xcassets */; };
+		EFD07E9E29E0DCDD00755EBD /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD07E9D29E0DCDD00755EBD /* Tab.swift */; };
+		EFD07EA129E0E0FD00755EBD /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD07EA029E0E0FD00755EBD /* HomeStack.swift */; };
+		EFD07EA329E0E12400755EBD /* FavoriteStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD07EA229E0E12400755EBD /* FavoriteStack.swift */; };
+		EFD07EA529E0E12E00755EBD /* SettingsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD07EA429E0E12E00755EBD /* SettingsStack.swift */; };
+		EFD07EA729E0E29400755EBD /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD07EA629E0E29400755EBD /* AppData.swift */; };
+		EFD07EA929E0E36100755EBD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD07EA829E0E36100755EBD /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		EFD07E8F29E0DC4C00755EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EFD07E9129E0DC4D00755EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFD07E9429E0DC4D00755EBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFD07E9D29E0DCDD00755EBD /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		EFD07EA029E0E0FD00755EBD /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
+		EFD07EA229E0E12400755EBD /* FavoriteStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStack.swift; sourceTree = "<group>"; };
+		EFD07EA429E0E12E00755EBD /* SettingsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStack.swift; sourceTree = "<group>"; };
+		EFD07EA629E0E29400755EBD /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		EFD07EA829E0E36100755EBD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EFD07EAA29E1265300755EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,9 @@
 		EFD07E8C29E0DC4C00755EBD /* deep-links */ = {
 			isa = PBXGroup;
 			children = (
+				EFD07EAA29E1265300755EBD /* Info.plist */,
+				EFD07E9C29E0DCCB00755EBD /* Model */,
+				EFD07E9B29E0DCC500755EBD /* View */,
 				EFD07E8D29E0DC4C00755EBD /* deep_linksApp.swift */,
 				EFD07E8F29E0DC4C00755EBD /* ContentView.swift */,
 				EFD07E9129E0DC4D00755EBD /* Assets.xcassets */,
@@ -65,6 +81,34 @@
 				EFD07E9429E0DC4D00755EBD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFD07E9B29E0DCC500755EBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFD07EA829E0E36100755EBD /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFD07E9C29E0DCCB00755EBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFD07E9F29E0E0F000755EBD /* NavStacks */,
+				EFD07E9D29E0DCDD00755EBD /* Tab.swift */,
+				EFD07EA629E0E29400755EBD /* AppData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFD07E9F29E0E0F000755EBD /* NavStacks */ = {
+			isa = PBXGroup;
+			children = (
+				EFD07EA029E0E0FD00755EBD /* HomeStack.swift */,
+				EFD07EA229E0E12400755EBD /* FavoriteStack.swift */,
+				EFD07EA429E0E12E00755EBD /* SettingsStack.swift */,
+			);
+			path = NavStacks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD07E9E29E0DCDD00755EBD /* Tab.swift in Sources */,
+				EFD07EA529E0E12E00755EBD /* SettingsStack.swift in Sources */,
+				EFD07EA129E0E0FD00755EBD /* HomeStack.swift in Sources */,
 				EFD07E9029E0DC4C00755EBD /* ContentView.swift in Sources */,
+				EFD07EA329E0E12400755EBD /* FavoriteStack.swift in Sources */,
 				EFD07E8E29E0DC4C00755EBD /* deep_linksApp.swift in Sources */,
+				EFD07EA929E0E36100755EBD /* Home.swift in Sources */,
+				EFD07EA729E0E29400755EBD /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,7 @@
 				DEVELOPMENT_TEAM = CFBV6A4UV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "deep-links/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +350,7 @@
 				DEVELOPMENT_TEAM = CFBV6A4UV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "deep-links/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
